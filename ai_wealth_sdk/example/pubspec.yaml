@@ -1,0 +1,27 @@
+name: ai_wealth_sdk_example
+description: Minimal Flutter app demonstrating AI Wealth SDK integration in a host bank app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.8.1 <4.0.0"
+  flutter: ">=3.32.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The SDK being integrated — path reference for local development.
+  ai_wealth_sdk:
+    path: ..
+
+  # State management — the only direct dependency the host app needs.
+  flutter_riverpod: ^2.6.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

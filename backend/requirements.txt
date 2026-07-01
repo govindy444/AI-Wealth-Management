@@ -1,0 +1,38 @@
+# ── Web framework ───────────────────────────────
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+python-multipart==0.0.20
+
+# ── Auth & security ─────────────────────────────
+python-jose[cryptography]==3.3.0
+passlib==1.7.4
+bcrypt==4.0.1  # pinned: bcrypt 5.x breaks passlib 1.7.4 backend detection
+email-validator==2.2.0
+cryptography==44.0.0
+
+# ── Persistence ─────────────────────────────────
+sqlalchemy==2.0.36
+alembic==1.14.0
+greenlet>=3.0          # required by SQLAlchemy async
+aiosqlite==0.20.0      # async SQLite driver (sandbox default)
+asyncpg==0.30.0        # async Postgres driver (production)
+psycopg2-binary==2.9.10
+redis==5.2.1
+
+# ── AI (Module 21) — provider-agnostic LLM layer ─
+# Optional: install only the SDK for the provider you use. The OpenAI-compatible
+# provider (OpenAI/Groq/Together/OpenRouter/Ollama/…) uses httpx and needs no SDK.
+anthropic==0.69.0      # only needed when LLM_PROVIDER=anthropic
+
+# ── HTTP / utils ────────────────────────────────
+httpx==0.28.1
+tenacity==9.0.0
+structlog==24.4.0
+
+# ── Dev / test ──────────────────────────────────
+pytest==8.3.4
+pytest-asyncio==0.25.0
+pytest-cov==6.0.0
+ruff==0.8.4

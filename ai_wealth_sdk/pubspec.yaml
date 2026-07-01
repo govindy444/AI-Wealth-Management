@@ -1,0 +1,50 @@
+name: ai_wealth_sdk
+description: "IDBI Wealth AI SDK — plug-and-play AI wealth advisor for digital banking. Embeddable Flutter package (chat, avatar, voice, spending, health, goals, recommendations, portfolio, fraud, notifications)."
+version: 0.1.0
+publish_to: "none"
+homepage: https://github.com/idbi/wealth-ai-sdk
+
+environment:
+  sdk: ">=3.8.1 <4.0.0"
+  flutter: ">=3.32.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management & DI
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Networking
+  dio: ^5.7.0
+
+  # Local & secure storage
+  flutter_secure_storage: ^9.2.2
+  shared_preferences: ^2.3.2
+
+  # Models / serialization / value semantics
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+  equatable: ^2.0.5
+
+  # Functional error handling
+  dartz: ^0.10.1
+
+  # Utilities
+  intl: ^0.20.2
+  collection: ^1.18.0
+  logging: ^1.2.0
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.13
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+  riverpod_generator: ^2.4.3
+  mocktail: ^1.0.4
+
+flutter:
