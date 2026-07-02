@@ -23,8 +23,7 @@ idbi-wealth-ai/
 │   └── architecture/
 │       └── ARCHITECTURE.md  # Full system design
 ├── .github/
-│   └── workflows/ci.yml     # GitHub Actions CI/CD
-├── PROGRESS.md              # Module-by-module build checklist
+│   └── workflows/ci.yml     # GitHub 
 ├── CHANGELOG.md             # Per-module changelog
 └── TESTING.md               # How to run all test suites
 ```
